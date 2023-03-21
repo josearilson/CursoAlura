@@ -1,21 +1,33 @@
 <meta charset="UTF-8">
 
+<h1>Receitas do Yan</h1>
+
 <script>
-    function pulaLinha() {
-        document.write("<br>");
-    }
+    var ingredientes = [];
 
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-    }
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
 
-    var idade = parseInt(prompt("Qual é sua idade"));
-    var temCarteira = prompt("Tem carteira? Responda S ou N");
+    var contador = 1;
 
-    if (idade >= 18 && temCarteira == "S") {
-        mostra("Pode dirigir");
-    } else {
-        mostra("Não pode dirigir");
+    while (contador <= quantidade) {
+
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+
+        var existe = false;
+
+        for (var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+            if (ingredientes[posicao] == ingrediente) {
+
+                existe = true;
+                break;
+            }
+        }
+
+        if (existe == false) {
+
+            ingredientes.push(ingrediente);
+
+        }
     }
 </script>

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<input/>
+
+<button>Compare com o meu segredo</button>
+
+
+
+
+
+
+
+<script>
+    var segredo = 5
+    var inputDoHTML = document.querySelector("input")// document.querySelecto pega as informaçoes de algum lugar
+
+function verifica(){
+
+    if (inputDoHTML.value == segredo) {
+        alert("vc acertou!!!!!")
+    } else {
+        alert("vc errou!!!!!!")
+    }
+
+}
+
+
+
+  var button = document.querySelector("button")  
+  button.onclick = verifica
+
+</script>
