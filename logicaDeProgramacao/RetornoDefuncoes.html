@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura) {
+
+        return imc = peso / (altura * altura);
+  
+    
+
+    }
+
+var imcArilson = calculaImc(1.71,73)
+var imcAmigo = calculaImc(1.72, 68)
+    var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68)
+    //var totalImc = imcArilson + imcAmigo
+
+    
+
+
+
+mostra(imcArilson)
+mostra(imcAmigo)
+
+document.write("A soma dos IMCs é " + totalImc)
+
+
+
+</script>
